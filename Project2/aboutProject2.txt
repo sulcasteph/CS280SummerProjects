@@ -1,0 +1,37 @@
+Consider the following BNF grammar:
+
+A -> I = E
+E -> P O P | P
+O -> + | - | * | / | **
+P -> I | L | UI | UL | (E)
+U -> + | - | !
+I -> C | CI
+C -> a | b | ... | y | z
+L -> D | DL
+D -> 0 | 1 | ... | 8 | 9
+
+Using the technique described in class implement a recursive 
+descent parser that recognizes strings in this language. 
+Input should be from a file called input.txt and output should 
+be to the screen. An example session might look like this 
+(these strings are not necessarily in the language):
+
+Input file:
+
+a=1
+a=a+b-c*d
+a=a//b++c
+Output:
+
+The string "a=1" is in the language.
+The string "a=a+b-c*d" is in the language.
+The string "a=a//b++c" is not in the language.
+
+You must implement the project in BOTH Java and C++! 
+Implementations that do not include a solution in both 
+languages will, at best, receive half credit. To simplify 
+things you will not have to handle whitespace when parsing 
+the string, i.e. " " and similar are illegal characters in 
+this language. All strings should read from a file called 
+"input.txt" and written to the screen.  Please name your 
+java file "Main.java" and your C++ file "main.cc".
