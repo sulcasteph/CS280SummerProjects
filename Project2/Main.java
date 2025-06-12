@@ -40,18 +40,12 @@ public class Main{
         return false;
     }
 
-    private static boolean E(){
-        if(P()){
-            if(O()){
-                if(P()){
-                    return true;
-                }
-            }
+    private static boolean E() {
+        if (!P()) return false;
+        while (O()) {
+            if (!P()) return false;
         }
-        else if(P()){
-            return true;
-        }
-        return false;
+        return true;
     }
 
     private static boolean O(){
@@ -92,23 +86,21 @@ public class Main{
         return false;
     }
 
-    private static boolean U(){
-        if(i < s.length() && s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '!'){
+    private static boolean U() {
+        if (i < s.length() && (s.charAt(i) == '+' || s.charAt(i) == '-' || s.charAt(i) == '!')) {
             ++i;
             return true;
         }
         return false;
     }
 
-    private static boolean I(){
-
-        if(C()){
-            if(I()){
-                return true;
-            }
+    private static boolean I() {
+        int start = i;
+        if (C()) {
+            while (C()) {}
             return true;
         }
-
+        i = start;
         return false;
     }
 
@@ -120,18 +112,17 @@ public class Main{
         return false;
     }
 
-    private static boolean L(){
-        if(D()){
-            if(L()){
-                return true;
-            }
+    private static boolean L() {
+        int start = i;
+        if (D()) {
+            while (D()) {}
             return true;
         }
+        i = start;
         return false;
     }
 
     private static boolean D(){
-
         if(i < s.length() && '0' <= s.charAt(i) && s.charAt(i) <= '9'){
             ++i;
             return true;
