@@ -1,3 +1,7 @@
+//Stephanie Sulca
+//CS280- 011
+//Project 2: Recursive Descent Parser
+
 import java.io.FileReader;
 import java.io.BufferedReader;
 import java.io.IOException;

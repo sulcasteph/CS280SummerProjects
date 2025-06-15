@@ -1,3 +1,7 @@
+//Stephanie Sulca
+//CS280- 011
+//Project 2: Recursive Descent Parser
+
 #include <stdbool.h>
 #include <stdio.h>
 #include <string>
