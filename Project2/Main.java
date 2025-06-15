@@ -95,13 +95,11 @@ public class Main{
     }
 
     private static boolean I() {
-        int start = i;
-        if (C()) {
-            while (C()) {}
-            return true;
+        if(!C()){
+            return false;
         }
-        i = start;
-        return false;
+        while(C());
+        return true;
     }
 
     private static boolean C(){
@@ -113,13 +111,11 @@ public class Main{
     }
 
     private static boolean L() {
-        int start = i;
-        if (D()) {
-            while (D()) {}
-            return true;
+        if(!D()){
+            return false;
         }
-        i = start;
-        return false;
+        while(D());
+        return true;
     }
 
     private static boolean D(){
