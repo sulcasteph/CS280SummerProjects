@@ -34,8 +34,13 @@ int main(int argc, char *argv[]){
     }
 
     while(getline(file, line)){
-        s = line;
+        // Trim whitespace
+        line.erase(0, line.find_first_not_of(" \t\r\n"));
+        line.erase(line.find_last_not_of(" \t\r\n") + 1);
 
+        if(line.empty()) continue;
+
+        s = line;
         if(A() && s.empty()){
             cout << "The string \"" << line << "\" is in the language." << endl;
         }
