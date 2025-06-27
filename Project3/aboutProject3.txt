@@ -1,0 +1,19 @@
+Using the C programming language implement Heapsort in the manner described in class. 
+Here is some example CODE to use as a guideline. Remember, you need only implement 
+the sort algorithm, both the comparison and main functions 
+have been provided. Submit a single C file called "srtheap.c" only!
+
+The code provided is within the Project3 folder and uses the following header as a guidance 
+for compilation:
+
+/*
+ *
+ *  after splitting this file into the five source files:
+ *
+ *	srt.h, main.c, srtbubb.c, srtinsr.c, srtmerg.c
+ *
+ *  compile using the command:
+ *
+ *	gcc -std=c99 -DRAND -DPRNT -DTYPE=(float | double) -D(BUBB | HEAP | INSR | MERG) *.c
+ *
+ */
