@@ -1,3 +1,6 @@
+// Stephanie Sulca
+// Project3: Heap Sort Algorithm
+
 #include <stddef.h>
 #include "srt.h"
 
