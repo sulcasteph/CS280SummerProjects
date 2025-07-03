@@ -1,0 +1,36 @@
+Complex number class
+
+Design a class in C++, Java, and Python that represents complex numbers
+and supports important operations such as addition, subtraction, 
+multiplication and division. For the C++ and Python versions you will 
+need to implement the following functions for each operation:
+
+op: Complex × Complex → Complex
+op: Complex × double → Complex
+op: double × Complex → Complex
+
+Where op is one of +, -, *, or /. In addition, you will need to 
+overload the stream insertion operator << to print objects of 
+this type.
+
+A constructor must be defined. Any other methods you deem appropriate 
+should also be included. The more complete your class the better.
+
+The Java version will not have as many methods because Java does not 
+allow for operator overloading or friend functions. Again, the more 
+complete your Java class the better. Override the toString() method.
+
+The Python version you should also include functions for converting 
+from complexes to strings.
+
+The required files for this project are: a complex.cc that instantiates 
+complex numbers and tests all methods and functions, and a Complex.java 
+file that instantiates and tests all methods of the Complex class. The 
+python files required are a complex.py file.
+
+In addition you must write a 2.5 (625+ words) page paper comparing and 
+contrasting the C++, Java, and Python ways of implementing such a class 
+(hint: operator overloading). Comment on the pros and cons of all languages 
+and finally make a determination as to which language is superior. 
+Submit the file as "complex.txt".
+

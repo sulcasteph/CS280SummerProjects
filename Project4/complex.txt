@@ -1,0 +1,70 @@
+Comparison of Complex Number Class Implementations in C++, Java, and Python
+
+Introduction
+    For this project 4 we were required to build a Complex numbers class and
+implement it in C++, Java, and Python. The class had to support airthmetic 
+expressions and use operator overloading in order to allow for addition, 
+subtraction, multiplication, and division. The main difference between implementing
+the Complex class in these 3 languages is the operator overloading that takes place
+within these languages.
+
+C++ Implementation 
+    The C++ implementation shows the language's powerful operator overloading 
+capabilities that allow you to easily code out and use throughout your program.
+Implementing the Complex numbers class allowed for the redefinition of standard
+mathematical operations that can naturally work with custom classes. Writing the 
+program in C++ called for the use of both member functions and friend functions.
+The member functions were used for operations where the Complex object is the left 
+operand while the friend functions were used for operations where a double was the 
+left operand.
+    Programming this implementation in C++ offered several advantages. The syntax 
+was the first and simplest thing noticed as writing code. It is significantly 
+clean and allows for the computation 'c1 + c2' to be easily read and mirrors 
+mathematical notation. The friend functions allowed for symmetric operations,
+creating an easy way to operate complex + double and double + complex operations.
+    On the other hand, the C++ approach can present drawbacks. The code is verbose,
+requiring separate operator overloads for each combination of operand types. The 
+friend functions can make the class's creation look cluttered and the understanding 
+of operator overloading mechanics within this language can be steep for beginners.
+
+Java Implementation
+    Java's implementation takes a completely different approach due to the language's 
+complicated design that does not support operator overloading for user- defined classes.
+Due to this issue, the implementation relies on named methods such as add(), subtract(),
+mult(), and divide(). This creates a more explicit programming style, which can be a strong
+advantage.
+    The Java approach has advantages in terms of clarity, due to its need for explicitly 
+named functions. Each method name clearly indicates the intended operation, allowing for 
+easy readability. Java's need and use for curly brackets also increases its readability due
+to how easily you can identify data members and well- defined public interfaces.
+Java's memory management and garbage collection eases concerns about resource cleanup, 
+another advantage for this language.
+    Regardless of its advantages, Java's implementation suffers from its restriction of 
+mathematical expressiveness. Instead of writing 'c1 + c2' I needed to write c1.add(c2), 
+which creates a disconnect between the code representation and the notation of the expression.
+
+Python Implementation
+    Python's implementations uses the language's dunder methods to successfully complete operator
+overloading, allowing for a more dynamic and flexible approach. The approach used in Python easily 
+straddles object- oriented design and mathematical notation. 
+    However, the Python method displays some interesting properties. For example, isinstance() 
+provides some type of runtime flexibility, and the method, therefore, can deal with both 
+Complex-Complex and Complex-scalar operations without distinction. The reflected operation methods 
+(__radd__, __rmul__, and so forth) guarantee that the mathematical notion of commutativity remains 
+intact at the potential cost of some extra boilerplate needed to define these methods.
+    The Python implementation has a fair medium verbosity-in-between Java's explicit method-calling 
+format and condensed operator definition. __str__ is integrated with Python operators for seamless 
+type conversion to string, which becomes handy in debugging and user interaction. 
+
+Conclusion
+    Alone with all three implementations put into eye, C++ was declared to be the best choice for 
+implementing the Complex class as judged by the whole criteria of software development. While each 
+of the three languages has its own set of advantages, C++ offers a blend of speed, control, and 
+mathematical expressiveness and which stands best for serious mathematical computing applications. 
+C++ does operator overloading to produce the most natural mathematical language, and at the same 
+time uphold strict compile-time type checking, ensuring optimal performance. The ability to control 
+memory management explicitly and write highly optimized code according to any constraints on C++ makes 
+it an ideal choice for applications in which complex number operations are performed frequently. 
+From the point of view of complexity, the friend function mechanism oddly allows total control over 
+the implementation of the operators, ensuring that symmetric operations are implemented correctly. 
+These observations prove that C++ may be the best language for this kind of programming implementation.
